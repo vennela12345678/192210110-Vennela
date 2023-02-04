@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+	char a;
+	printf("enter the letter:");
+	scanf("%c",&a);
+	printf("ascii value of % c= % d",a,a);
+	return 0;
+}

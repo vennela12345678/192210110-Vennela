@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+int main() 
+{ 
+   int num;
+   float sqrt, s;
+   printf (" Enter a number to get the square root: ");
+   scanf (" %d", &num);
+   sqrt = num / 2;
+   s = 0;
+   while (sqrt != s) 
+  { 
+   s = sqrt;
+   sqrt = ( num / s + s) / 2; 
+  } 
+   printf (" \n The square root of %d is %f", num, sqrt);
+   return 0;
+} 

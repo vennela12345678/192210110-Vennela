@@ -1,0 +1,20 @@
+#include<stdio.h>
+union value
+{
+	int a;
+	float b; 
+	double c;
+}n;
+int main()
+{
+	printf("enter a value:");
+	scanf("%d",&n.a);
+	printf("enter b value:");
+	scanf("%f",&n.b);
+	printf("enter c value:");
+	scanf("%lf",&n.c);
+	printf("%d\n",n.a);
+	printf("%f\n",n.b);
+	printf("%lf",n.c);
+	return 0;
+}

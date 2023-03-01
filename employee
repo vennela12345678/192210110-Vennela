@@ -1,0 +1,21 @@
+#include <stdio.h>
+struct employee
+{
+    int loanamount;
+    int salary;
+    float HRA;
+    float DA;
+    float totalsalary;
+}n;
+int main()   
+{
+    printf("enter the salary:");
+    scanf("%d",&n.salary);
+    printf("enter the loanamount:");
+    scanf("%d",&n.loanamount);
+    n.HRA=(n.salary*2)/100;
+    n.DA=(n.salary*23)/100;
+    n.totalsalary=(n.salary+n.HRA+n.DA)-n.loanamount;
+    printf("total salary:%.2f",n.totalsalary);
+    return 0;
+}

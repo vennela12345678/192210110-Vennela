@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+#include <math.h>
+int main () 
+{
+   double a, b, c, determinant;
+   printf("Enter determinant of a, b and c: ");
+   scanf("%lf %lf %lf", &a, &b, &c);
+   determinant = (b * b) – (4 * a * c);
+   printf("The determinant is:%lf ", determinant);
+   return 0;
+ }
